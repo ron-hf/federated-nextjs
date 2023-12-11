@@ -14,10 +14,10 @@
     "check": "manypkg check",
     "clean": "manypkg exec rm -rf node_modules && manypkg exec rm -rf dist",
     "lint": "yarn eslint .",
-    "start:host": "yarn manypkg fix && yarn manypkg run host-app dev",
-    "start:remote": "yarn manypkg fix && yarn manypkg run remote-app dev",
-    "build:host": "yarn manypkg fix && yarn manypkg run host-app build",
-    "build:remote": "yarn manypkg fix && yarn manypkg run remote-app build"
+    "start:host": "yarn manypkg fix && yarn manypkg run host dev",
+    "start:remote": "yarn manypkg fix && yarn manypkg run remote dev",
+    "build:host": "yarn manypkg fix && yarn manypkg run host build",
+    "build:remote": "yarn manypkg fix && yarn manypkg run remote build"
   },
   "engines": {
     "node": ">= 16.16.0"
