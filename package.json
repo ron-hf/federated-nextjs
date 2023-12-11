@@ -1,0 +1,37 @@
+{
+  "name": "@hf/root",
+  "version": "0.0.0",
+  "description": "rnd test front end with module federation",
+  "main": "index.ts",
+  "author": "MIT",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "components/*"
+  ],
+  "scripts": {
+    "check": "manypkg check",
+    "clean": "manypkg exec rm -rf node_modules && manypkg exec rm -rf dist",
+    "lint": "yarn eslint .",
+    "start:host": "yarn manypkg fix && yarn manypkg run host-app dev",
+    "start:remote": "yarn manypkg fix && yarn manypkg run remote-app dev",
+    "build:host": "yarn manypkg fix && yarn manypkg run host-app build",
+    "build:remote": "yarn manypkg fix && yarn manypkg run remote-app build"
+  },
+  "engines": {
+    "node": ">= 16.16.0"
+  },
+  "dependencies": {
+    "@manypkg/cli": "^0.21.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5"
+  },
+  "manypkg": {
+    "defaultBranch": "master"
+  }
+}
