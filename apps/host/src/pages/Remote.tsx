@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import dynamic from "next/dynamic";
 
-export const Page1 = () => {
+export const Page3 = () => {
   const Dashboard = dynamic(async () => await import('app2/Dashboard'));
   return (
     <>
@@ -13,4 +13,4 @@ export const Page1 = () => {
   )
 };
 
-export default Page1;
+export default Page3;

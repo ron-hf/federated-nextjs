@@ -1,75 +1,91 @@
-/**
- * Color intention that you want to used in your theme
- * @param {JsonObject} theme Theme customization object
- */
-
-import { Theme } from "@mui/material";
-
- export default function themePalette(theme: any) {
-  return {
-    mode: theme?.customization?.navType,
-    common: {
-      black: theme.colors?.darkPaper
-    },
-    primary: {
-      light: theme.colors?.primaryLight,
-      main: theme.colors?.primaryMain,
-      dark: theme.colors?.primaryDark,
-      200: theme.colors?.primary200,
-      800: theme.colors?.primary800
-    },
-    secondary: {
-      light: theme.colors?.secondaryLight,
-      main: theme.colors?.secondaryMain,
-      dark: theme.colors?.secondaryDark,
-      200: theme.colors?.secondary200,
-      800: theme.colors?.secondary800
-    },
-    error: {
-      light: theme.colors?.errorLight,
-      main: theme.colors?.errorMain,
-      dark: theme.colors?.errorDark
-    },
-    orange: {
-      light: theme.colors?.orangeLight,
-      main: theme.colors?.orangeMain,
-      dark: theme.colors?.orangeDark
-    },
-    warning: {
-      light: theme.colors?.warningLight,
-      main: theme.colors?.warningMain,
-      dark: theme.colors?.warningDark
-    },
-    success: {
-      light: theme.colors?.successLight,
-      200: theme.colors?.success200,
-      main: theme.colors?.successMain,
-      dark: theme.colors?.successDark
-    },
-    grey: {
-      50: theme.colors?.grey50,
-      100: theme.colors?.grey100,
-      500: theme.darkTextSecondary,
-      600: theme.heading,
-      700: theme.darkTextPrimary,
-      900: theme.textDark
-    },
-    dark: {
-      light: theme.colors?.darkTextPrimary,
-      main: theme.colors?.darkLevel1,
-      dark: theme.colors?.darkLevel2,
-      800: theme.colors?.darkBackground,
-      900: theme.colors?.darkPaper
-    },
-    text: {
-      primary: theme.darkTextPrimary,
-      secondary: theme.darkTextSecondary,
-      dark: theme.textDark,
-      hint: theme.colors?.grey100
-    },
-    background: {
-      paper: theme.paper,
-      default: theme.backgroundDefault
-    }
-  };
-}
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {
+  mode: 'light',
+  background: {
+      default: '#fafafa',
+  },
+  primary: {
+      '100': '#F6FDE9',
+      '200': '#E4FABF',
+      '300': '#D2F895',
+      '400': '#96DC14',
+      '500': '#00A846',
+      '600': '#067A46',
+      '700': '#056835',
+      '800': '#035624',
+      main: '#00A846',
+      light: '#F6FDE9',
+      dark: '#035624',
+      contrastText: '#ffffff',
+  },
+  secondary: {
+      main: '#91C11E',
+      light: '#D3DEE6',
+      dark: '#7B8994',
+      contrastText: '#ffffff',
+  },
+  negative: {
+      '100': '#FFEAE9',
+      '200': '#FFCCCA',
+      '300': '#FCAD9A',
+      '500': '#DB1D1D',
+      '600': '#B30000',
+      '700': '#970000',
+      '800': '#7C0000',
+      main: '#CC3333',
+      contrastText: '#ffffff',
+  },
+  warning: {
+      '100': '#FFECD3',
+      '500': '#EF670A',
+      '600': '#CE4500',
+      '700': '#A43700',
+      main: '#F0AA4A',
+  },
+  light: {
+      '100': '#F6FDE9',
+      '200': '#E4FABF',
+      '300': '#D2F895',
+      '400': '#96DC14',
+      '500': '#00A846',
+      '600': '#067A46',
+      '700': '#056835',
+      '800': '#035624',
+      main: '#91C11E',
+      light: '#C8E08F',
+      dark: '#749A18',
+      contrastText: '#000',
+  },
+  positive: {
+      '200': '#E4FABF',
+      '500': '#00A846',
+      '600': '#067A46',
+      main: '#91C11E',
+  },
+  info: {
+      '100': '#E9FAFF',
+      '500': '#1268FF',
+      '800': '#00178C',
+      light: '#64b5f6',
+      main: '#2196f3',
+      dark: '#1976d2',
+  },
+  neutral: {
+      '100': '#FFFFFF',
+      '200': '#F8F8F8',
+      '300': '#EEEEEE',
+      '400': '#E4E4E4',
+      '500': '#BBBBBB',
+      '600': '#767676',
+      '700': '#676767',
+      '800': '#242424',
+      main: '#BBBBBB',
+      contrastText: '#ffffff',
+  },
+  reward: {
+      '200': '#FFFAB2',
+      '400': '#FFE900',
+      '500': '#E2C700',
+      main: '#FFE900',
+  },
+};

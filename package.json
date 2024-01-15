@@ -20,7 +20,7 @@
     "build:remote": "yarn manypkg fix && yarn manypkg run remote build"
   },
   "engines": {
-    "node": ">= 16.16.0"
+    "node": ">= 18.17.0"
   },
   "dependencies": {
     "@manypkg/cli": "^0.21.0",

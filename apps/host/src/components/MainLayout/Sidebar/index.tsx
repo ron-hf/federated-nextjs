@@ -5,9 +5,10 @@ import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { useTheme } from '@mui/material';
 
 type Anchor = 'left' | 'nav';
 
@@ -34,23 +35,24 @@ export default function TemporaryDrawer() {
     };
 
   const list = (anchor: Anchor) =>  {
-    const handleSelection = (text: string) => {
-      router.push(text);
-    };
+    const url = 'http://localhost:3000'
+    const theme = useTheme()
 
     return (
       <Box
-        sx={{ width: 250 }}
+        width='250px'
         role="presentation"
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
       >
-        <List>
-          {['App1', 'App2', 'App3'].map((text) => (
+        <List sx={{
+          ml: 2,
+        }}>
+          {['Host', 'Remote', 'Suppliers'].map((text) => (
             <ListItem key={text} disablePadding>
-              <ListItemButton onClick={() => handleSelection(text)}>
+              <Link href={`${url}/${text}`}>
                 <ListItemText primary={text} />
-              </ListItemButton>
+              </Link>
             </ListItem>
           ))}
         </List>

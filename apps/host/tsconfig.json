@@ -22,7 +22,7 @@
         "name": "next"
       }
     ],
-    "baseUrl": "http://localhost:3000/_next/",
+    "baseUrl": "http://hf-demo.com/_next/",
     "paths": {
       "@app2/*": [
         "static/chunks/remoteEntry.js"

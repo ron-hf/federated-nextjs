@@ -32,6 +32,8 @@
  const nextConfig = {
    reactStrictMode: true,
    output: 'export',
+   //basePath: '/Remote',
+   //assetPrefix: '/Remote/',
    webpack(config, { isServer }) {
      config.plugins.push(
       new NextFederationPlugin(federationConfig)
